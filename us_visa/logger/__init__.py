@@ -1,10 +1,8 @@
 import logging
 import os
 from datetime import datetime
+from from_root import from_root
 
-def from_root():
-    """Get the project root directory"""
-    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 
